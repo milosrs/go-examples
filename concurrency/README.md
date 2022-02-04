@@ -15,6 +15,8 @@ Withdrawal fails if there are insufficient funds in the balance, and returns the
 
 - Non Blocking Cache: URL Body fetcher, which memoizes the responses
 
+- Ping-Pong: Measures the throughput of gouritnes. Data Race free.
+
 ## Notes
 
 ### _Race detector_
