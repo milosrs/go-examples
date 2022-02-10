@@ -31,6 +31,7 @@ func main() {
 
 	fmt.Println(*outpath, *path)
 	f, err := os.Create(fmt.Sprintf("%s.%s", *outpath, *of))
+	defer f.Close()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to create file %s: %v", *outpath, err)
 	}
